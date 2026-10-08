@@ -69,8 +69,6 @@ func mustEnv(key string) string {
 
 	if v == "" {
 		log.Fatalf("%s is not set", key)
-		// Prints the message and exits the program immediately.
-		// It's better to fail at startup than to fail later on a real request.
 	}
 	return v
 }
